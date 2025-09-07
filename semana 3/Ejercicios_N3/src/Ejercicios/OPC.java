@@ -1,10 +1,8 @@
 package Ejercicios;
 
-package ejercicios;
-
 import java.util.*;
 
-public class Ejercicio2_OCP {
+public class OCP {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Canvas canvas = new Canvas();
@@ -61,3 +59,4 @@ class Canvas {
     @SuppressWarnings("unchecked")
     public <T extends Forma> void dibujar(T f){ ((Renderizador<T>)renderers.get(f.getClass())).dibujar(f); }
 }
+
